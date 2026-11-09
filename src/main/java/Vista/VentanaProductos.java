@@ -9,6 +9,7 @@ import Modelo.ModeloElectronico;
 import Modelo.ModeloAlimento;
 import Modelo.ModeloBelleza;
 import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -480,6 +481,7 @@ public class VentanaProductos extends javax.swing.JFrame {
 
             double volumen  = Double.parseDouble(v8);
             String tipoPiel = v9; 
+            
             
             javax.swing.table.DefaultTableModel modelo = (javax.swing.table.DefaultTableModel) tblProductos.getModel();
             modelo.addRow(new Object[]{codigo, nombre, precio, tipoSeleccionado, volumen, tipoPiel});
